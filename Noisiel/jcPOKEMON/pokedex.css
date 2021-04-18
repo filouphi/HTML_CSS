@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.img-container{
+    text-align: center;
+}
+
+header{
+    background: rgb(8, 8, 104);
+    position: sticky;
+    top: 0;
+    font-size: 20px;
+}
+header *{
+    color: white;
+}
+header input[type=checkbox]{
+    display: none;
+}
+header label{
+    display: flex;
+}
+header label span{
+    padding-top: 12px;
+}
+header .nav{
+    display: none;
+}
+header input[type=checkbox]:checked + .nav{
+    display: flex;
+    flex-direction: column;
+}
+header .nav li:hover{
+    background: rgb(7, 7, 189);
+}
+header .sous{
+    text-align: center;
+}
+header .nav .sous li:hover{
+    background: rgb(175, 151, 12);
+} 
+
+.video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+footer{
+    padding: 20px;
+    background: rgb(8, 8, 104);
+    color: white;
+}
+
+/*---------------------------------Contact-----------------------------------*/
+    .contact-title{
+        text-align: center;
+    }
+    .table-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .table-container .form-group{
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .form-group input, .form-group textarea {
+        border:none;
+        border-bottom: 1px solid black;
+    }
+
+    .form-group-submit{
+        text-align: center;
+        margin-left: 90px;
+        margin-top: 20px;
+    }
+/*---------------------------------EndContact-----------------------------------*/
+
+@media screen and (min-width:980px){
+    header label{
+        display: none;
+    }
+    header .nav{
+        display: flex;
+        font-size: 30px;
+    }
+    .nav li, .sous li {
+        width: 100%;
+        text-align: center;
+    }
+    header .sous{
+        display: none;
+    }
+    header .deroulant:hover .sous{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: red;
+        width: 33%;
+    }
+    
+    
+}

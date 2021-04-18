@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    !<main>
+        <h2>tp</h2>
+        <div>
+            <form action="merci.html">
+                <fieldset>
+                  
+                        <legend>informations principales</legend>
+                        <p>De quel pays venez vous?</p>
+
+                    <select name="pays" id="pays">
+                        <optgroup label="Europe"> 
+                            <option value="Portugal">Portugal</option>
+                            <option value="France">France</option>
+                            <option value="Espagne">Espagne</option>
+                            <option value="Angleterre">Angleterre</option>
+                            <option value="Suede">Suede</option>
+                        </optgroup>
+                        <optgroup label="Afrique"> 
+                            <option value="Senegal">Senegal</option>
+                            <option value="Mali">Mali</option>
+                            <option value="Cameroun">Cameroun</option>
+                        </optgroup>
+                        <optgroup label="Asie"> 
+                            <option value="Iran">Iran</option>
+                            <option value="Japon">Japon</option>
+                            <option value="chine">Chine</option>
+                        </optgroup>
+                        <optgroup label="Amerique"> 
+                            <option value="colombie">colombie</option>
+                            <option value="Perou">perou</option>
+                            <option value="Etats unis">etats unis</option>
+                        </optgroup>
+                        <optgroup label="Oceanie"> 
+                            <option value="Australie">Australie</option>
+                            <option value="fidji">fidji</option>
+                        </optgroup>
+                    </select>
+                    <br /> <br />
+                        <div>
+                            <label for="lName">Nom</label>
+                            <input type="text"name='lName'id='lName'required><br /> <br />
+                        </div> 
+
+                        <div>   
+                            <label for="fName">Prenom</label>
+                            <input type="text"name='fName'id='fName'required><br /> <br />
+                        </div> 
+
+                        <div>
+                            <label for="age">Age</label>
+                            <input type="number"lname='lName'id='fName'required><br /> <br />
+                        </div> 
+
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email"lname='lName'id='email'required><br /> <br />
+                        </div>    
+                 </fieldset>
+
+                 <fieldset>
+                     <legend>hobbies</legend>
+                     <p>Qu'aimez-vous faire pour passer votre temps?'</p>
+
+                     <input type="radio" name="hobbies" value="La lecture">La lecture <br/>
+                     <input type="radio" name="hobbies" value="Le sport">Le sport <br/>
+                     <input type="radio" name="hobbies" value="Les voyages"> Les voyages<br/>
+                     <input type="radio" name="hobbies" value="Les jeux videos">Les jeux videos <br/>
+                </fieldset>
+              <br><br>
+              <button type="submit">  envoie formulaire</button>
+              <br /><br />
+              <button type="reset">  reset</button>
+            </form>
+        </div>
+</body>
+
+</html>

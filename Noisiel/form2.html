@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h2>Les Differents formulaires</h2>
+
+    <p>ici on a les classiques </p>
+    <form action="merci.html" method="GET">
+        <div>
+            
+            <div>
+                <label for="Name">nom</label>
+                <input type="text"name='Name'id='Name' required >
+            </div>    
+            <div>
+                <label for="MAIL">votre E-Mail</label>
+                <input type="email"name='MAIL'id='MAIL' required >
+            </div>    
+            <div>
+                <label for="tel">votre Numero de telephone</label>
+                <input type="tel"name='tel'id='tel' required >
+            </div>    
+            <div>
+                <label for="dNaissance">votre Date de Naissance est:</label>
+                <input type="date"name='dNaissance'id='dNaissance' required>
+            </div>    
+         </div>
+         <br />
+         <div>
+             <div>
+                 <label for="message">Votre message:</label>
+                 <textarea name="message" id="message" cols="10" rows="1"></textarea>
+             </div>
+         </div>
+         <button type="submit">  envoie formulaire</button>
+    </form>
+
+    <h2>Autres type de champs:</h2>
+    <div>
+        <form action="merci.html">
+            <p>Quel est votre nationalité?</p>
+            <input type="radio" name="nationalite" value="Francais">je suis Francais <br/>
+            <input type="radio" name="nationalite" value="Portugais">je suis Portugais <br/>
+            <input type="radio" name="nationalite" value="Algerien">je suis Algerien <br/>
+            <input type="radio" name="nationalite" value="senegalais">je suis senegalais <br/>
+            <input type="radio" name="nationalite" value="coreen">je suis coreen <br/><br/>
+            <button type="submit">  envoie formulaire</button>
+        </form>
+    </div>
+    <br/><br/><br/>
+    <div>
+        <form action="merci.html">
+            <p>Quels sont vos loisirs?</p>
+            <input type="checkbox" name="loisirs" value="Cinema">le cinema<br/>
+            <input type="checkbox" name="loisirs" value="Théatre">le theatre<br/>
+            <input type="checkbox" name="loisirs" value="sport">le sport<br/>
+            <input type="checkbox" name="loisirs" value="lecture">la lecture<br/>
+            <input type="checkbox" name="loisirs" value="Jeux videos">les jeux videos <br/><br/>
+            <button type="submit">  envoie formulaire</button>
+        </form>
+    </div>
+    <br/><br/>
+    <div>
+        <form action="merci.html">
+            <p>Qenvoie d'un fichier unique.</p>
+      
+           selectionnez un fichier: <input type="file" name="mon fichier" > <br/><br/>
+            <button type="submit">  envoie formulaire</button>
+        </form>
+    </div>
+    <div>
+        <form action="merci.html">
+            <p>envoie de fichiers multiples.</p>
+      
+           selectionnez un fichier: <input type="file" name="mes fichiers" multiple> <br/><br/>
+           -
+        </form>
+    </div>
+    <br/><br/>
+        <h2>menus deroulant</h2>
+    <div>
+        <form action="merci.html">
+            <p>Quels sont vos loisirs?</p>
+
+            <select name="loisirs" id="loisirs">
+                <option value="Cinema">Cinema</option>
+                <option value="Theatre">Theatre</option>
+                <option value="Sport">Sport</option>
+                <option value="Lecture">Lecture</option>
+                <option value="Jeux videos">Jeux videos</option>
+             </select>
+
+            <br/><br/>
+            <button type="submit">  envoie formulaire</button>
+        </form>
+    </div>
+    <br/><br/>
+    <div>
+        <form action="merci.html">
+            <p>Quels est votre pays?</p>
+
+            <select name="pays" id="pays">
+                <optgroup label="Europe"> 
+                    <option value="Portugal">Portugal</option>
+                    <option value="France">France</option>
+                    <option value="Espagne">Espagne</option>
+                    <option value="Angleterre">Angleterre</option>
+                    <option value="Suede">Suede</option>
+                    <optgroup label="Afrique"> 
+                        <option value="Senegal">Senegal</option>
+                        <option value="Mali">Mali</option>
+                        <option value="Cameroun">Cameroun</option>
+                    </optgroup>
+               
+               
+               
+                </optgroup>
+                <optgroup label="Afrique"> 
+                    <option value="Senegal">Senegal</option>
+                    <option value="Mali">Mali</option>
+                    <option value="Cameroun">Cameroun</option>
+                </optgroup>
+            </select>
+
+            <br/><br/>
+            <button type="submit">  envoie formulaire</button>
+        </form>
+    </div>
+</main>
+
+
+    
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <form method="POST" action="action.php">
+        <label for="nom">name:</label>
+        <input type="text" name="nom" id="nom" placeholder="entrez votre nom" required>
+        <br />
+
+        <label for="prenom">prenom:</label>
+        <input type="text" name="prenom" id="prenom" placeholder="entrez votre prenom"required>
+        <br />
+
+        <label for="age">age:</label>
+        <input type="number" name="age" id="age" placeholder="entrez votre age"required>
+        <br />
+
+        <label for="tel">tel:</label>
+        <input type="tel" name="tel" id="tel" placeholder="entrez votre numero de telephone">
+        <br />
+
+        <label for="zone ">zone</label>
+        <textarea name="zone" id="zone" cols="5" rows="3"> </textarea>
+        <br />
+        <label for="mail :">mail</label>
+        <input type="email" name="mail" id="mail" >
+        
+        <br />
+        <label for="date de naissance">date de naissance:</label>
+        <input type="date" name="date " id="date" >
+        <br />
+
+    
+        <br />
+     <p> quel est votre sexe ?</p>
+<input type="radio" name="sexe" id="masculin">masculin <br />
+<input type="radio" name="sexe" id="feminin">feminin <br />
+<input type="radio" name="sexe" id="autres"> autres <br />
+        <br />
+<p>quel est votre animal?</p>
+        <input type="checkbox" name="animaux" value="chat">chat  <br />
+        <input type="checkbox" name="animaux" value="chien">chien  <br />
+        <input type="checkbox" name="animaux" value="cheval">cheval  <br />
+        
+        <br />
+        
+        <label for="pays"> choisir votre pays:</label>
+            <select name="pays" id="pays">
+                <option value="France">France</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Suede">Suede</option>
+                
+
+            </select>
+
+        
+
+
+        <input type="submit">
+</form>
+    
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+* {
+   padding: 0;
+    margin:0 ;
+    list-style-type: none;
+    text-decoration:none ;
+    box-sizing: border-box;
+}
+.png{
+    text-align:center ;
+}
+
+#logo {
+    width:180px;
+    text-align:center ;
+}
+
+header {
+    background: rgb(15, 29, 223);
+    /* color: white; */
+    position: sticky; /* scrolle jusqu a la position top0 du header*/
+    top: 0;
+    font-size: 20px;
+}
+
+header * {/*****************cible tout contenu du header ***************/
+
+    color: white;
+}
+header input[type=checkbox] {  /* cache la case checkbox*/
+    display: none;
+}
+header label {
+    display: flex;
+}
+header label span {
+    padding-top: 12px;
+}
+header nav {
+    display: none;
+   
+}
+header input[type=checkbox]:checked + nav{/*****active le menu (checkbox)*/
+    display: flex;
+    flex-direction: column;
+}
+header nav li:hover {
+    background:rgb(168, 176, 199) ;
+}
+header .submenu {
+    text-align:center;
+}
+header nav .submenu li:hover 
+{
+    background:rgba(255, 0, 0, 0.644)
+}
+header nav li { border-right: 2px solid white ;}
+.generique {
+    display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   margin: 20px;
+}
+footer {
+    text-align: center;
+    background: chartreuse;
+    height: 25px;
+    position: sticky;
+    bottom:0px;
+padding: 5px;
+}
+
+footer span {
+    float: right;
+    padding-right: 120px;
+}
+/****************************************medias query  responsicve css******************/
+@media screen and (min-width:760px){
+    header label{
+        display: none;}
+    }
+    header nav{
+        display: flex;
+        font-size:30px
+    }
+    nav li, .submenu li {
+    width: 100%;
+    text-align: center;
+    }
+    header .submenu {
+        display: none;
+    }
+    header .deroulant:hover .submenu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background: rgba(255, 0, 0, 0.445);
+        width: 33%;
+    }

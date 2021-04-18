@@ -1,0 +1,36 @@
+*{
+    color: blanchedalmond;
+}
+header{
+    height: 200px;position: fixed;background-color: rgba(0, 0, 255, 0.829);width: 100%;padding: 0;margin-top: 0;
+}
+
+h1 {
+
+    color: rgb(208, 208, 218); text-align:center ;border: 3px solid red;width:800px;margin: 25px;margin:auto;
+}
+
+ #photo {
+    width: 100px;  float: left; border:2px solid black ;border-radius: 20px;
+ }  
+ .info {width: 350px; margin-left: 850px;padding-top:10px  ; line-height: 2px;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size:1.1em ;
+ 
+}
+body{
+    background: url(/IMG/bombe-logique_opt.jpg) center center / cover no-repeat fixed;width: auto;height: auto;
+}
+main{
+    background-color: rgba(79, 21, 156, 0.575);margin-top:200px ;;
+}
+table , td ,th{
+    border: 4px solid rgb(230, 218, 218); border-collapse:collapse ;
+}
+h2{
+    text-align-last: center;font-size:1.8em ;
+}
+footer {
+    position: fixed;  background-color: rgba(0, 0, 255, 0.829);height: 65px; 
+}
+footer p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: 1.3em;text-align: center;padding-top:20px ;
+}

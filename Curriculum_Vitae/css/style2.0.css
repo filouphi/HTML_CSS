@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/*********************************************************** DEBUT STYLES DE L ENTETE **************************************************************************************/
+body {
+    background-image: linear-gradient(to right, rgb(239, 241, 241),rgb(156, 210, 214),rgb(38, 134, 141),rgb(114, 113, 172),rgb(4, 82, 78),rgb(13, 194, 207),rgb(228, 238, 240)); 
+}
+#entete {
+   width: 100%;
+    display: grid;
+    grid-template-columns: 113px  1fr 160px ;
+    background: lightblue;
+}
+#image {
+margin: 20px;
+border: 2px solid lightblue;
+border-radius: 30px;
+}
+
+#infos {
+    font-family: satisfy ,cursive;
+    font-size: 25px;
+    margin-top:25px;
+    margin-left:250px ;
+}
+#gif {
+  margin: 10px;
+    width: 140px;
+
+}
+/* .zoom {
+    height:400px;
+    }
+    .zoom p {
+    text-align:center;
+    }
+    .zoom img {
+    width:200px;
+    height:267px;
+    }
+    .zoom img:hover {
+    width:300px;
+    height:400px;
+    } */
+/**********************************************************----*FIN STYLES DE L ENTETE **************************************************************************************/
+
+/*********************************************************** DEBUT STYLES DE MENU NAV **************************************************************************************/
+nav {position: sticky;
+    top: 0;
+  
+}
+nav ul {
+    padding: 10px;
+    text-align: center;
+    background-color: #b69999;
+    height: 80px;
+}
+nav li {
+ padding: 10px;
+ display: inline-block;
+ border-right: 1px solid #cccccc;
+ text-align: center;
+ font-size: 20px;
+}
+nav li a {
+   display: block;
+   color: #ffffff;
+}
+nav li :hover{
+    padding: 5px;
+    background-color:lightblue;
+    height: 40px;
+}
+
+
+/*********************************************************** FIN DE  STYLES MENU NAV **************************************************************************************/
+h2 {
+    text-align: center;
+    color: rgb(17, 17, 17);
+    font-size: 27px;
+}
+
+#content {
+    background: #b69999;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+}
+
+
+aside {
+    background:lightblue;
+    border: 2px solid lightblue;
+    border-radius: 100px;
+    padding: 150px;
+    font-size: 20px;
+    margin: auto;
+}
+aside p {
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 10px 0;
+
+}
+
+
+aside li {
+    list-style-type: decimal;
+}
+#metier {
+    border: 2px solid lightblue;
+    border-radius: 100px;
+    background:lightblue;
+    margin: auto;
+    padding: 150px;
+    font-size: 20px;
+}
+#hobbies {
+    font-size: 20px;
+    padding-top: 80px;
+    padding-left: 100px;
+    display: grid ;
+    grid-template-columns:33%  33% 33% ;
+    background: #b69999;
+}
+
+#Ppro {
+    padding-top: 50px;
+}
+#hobbies h2 {
+    width: 100%;
+}
+footer {
+    padding: 10px;
+    height: 40px;
+    background: lightblue;
+    width: 100%;
+}
